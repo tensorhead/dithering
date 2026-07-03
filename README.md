@@ -1,10 +1,10 @@
 <p align="center">
     <br>
-    <img src="https://raw.githubusercontent.com/BackyardML/dithering/72ea732b8c7372af6f427a5f8244af158d80d208/resources/dithering.svg" width="600"/>
+    <img src="https://raw.githubusercontent.com/tensorhead/dithering/72ea732b8c7372af6f427a5f8244af158d80d208/resources/dithering.svg" width="600"/>
     <br>
 <p>
 
-![CI](https://github.com/BackyardML/dithering/actions/workflows/CI.yml/badge.svg)
+![CI](https://github.com/tensorhead/dithering/actions/workflows/CI.yml/badge.svg)
 [![PyPI](https://img.shields.io/pypi/v/dithering.svg)](https://pypi.org/project/dithering/)
 
 Fast image dithering for Python, written in Rust. One call, sane defaults, every classic algorithm:
@@ -60,15 +60,15 @@ out = dithering.error_diffusion(arr, "stucki", serpentine=True, levels=4)
 
 | Original | Floyd–Steinberg | Atkinson |
 | --- | --- | --- |
-| ![original](resources/examples/original_gray.png) | ![floyd_steinberg](resources/examples/floyd_steinberg.png) | ![atkinson](resources/examples/atkinson.png) |
+| ![original](https://raw.githubusercontent.com/tensorhead/dithering/main/resources/examples/original_gray.png) | ![floyd_steinberg](https://raw.githubusercontent.com/tensorhead/dithering/main/resources/examples/floyd_steinberg.png) | ![atkinson](https://raw.githubusercontent.com/tensorhead/dithering/main/resources/examples/atkinson.png) |
 
 | Bayer 2×2 | Bayer 8×8 | Random |
 | --- | --- | --- |
-| ![bayer2x2](resources/examples/bayer2x2.png) | ![bayer8x8](resources/examples/bayer8x8.png) | ![random](resources/examples/random.png) |
+| ![bayer2x2](https://raw.githubusercontent.com/tensorhead/dithering/main/resources/examples/bayer2x2.png) | ![bayer8x8](https://raw.githubusercontent.com/tensorhead/dithering/main/resources/examples/bayer8x8.png) | ![random](https://raw.githubusercontent.com/tensorhead/dithering/main/resources/examples/random.png) |
 
 | RGB Floyd–Steinberg | Game Boy palette | 16-color palette, Bayer 8×8 |
 | --- | --- | --- |
-| ![rgb](resources/examples/rgb_fs.png) | ![gameboy](resources/examples/gameboy.png) | ![retro16](resources/examples/retro16.png) |
+| ![rgb](https://raw.githubusercontent.com/tensorhead/dithering/main/resources/examples/rgb_fs.png) | ![gameboy](https://raw.githubusercontent.com/tensorhead/dithering/main/resources/examples/gameboy.png) | ![retro16](https://raw.githubusercontent.com/tensorhead/dithering/main/resources/examples/retro16.png) |
 
 ## API
 
@@ -142,8 +142,8 @@ Contributions are welcome! Fork the repository, create a branch from `main`, mak
 
 ## License
 
-MIT — see [LICENSE](https://github.com/BackyardML/dithering/blob/main/LICENSE).
+MIT — see [LICENSE](https://github.com/tensorhead/dithering/blob/main/LICENSE).
 
 ## Contact
 
-Questions, suggestions, feedback: open an issue on GitHub or email [info@backyardml.se](mailto:info@backyardml.se).
+Questions, suggestions, feedback: open an issue on GitHub or email [patrik@tensorhead.com](mailto:patrik@tensorhead.com).

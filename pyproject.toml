@@ -7,7 +7,7 @@ name = "dithering"
 description = "Fast image dithering: ordered (Bayer), error diffusion (Floyd-Steinberg & friends), random; palettes, linear-light and more. Rust speed, one-call API."
 readme = "README.md"
 license = { file = "LICENSE" }
-authors = [{ name = "Patrik Larsson", email = "patrik@backyardml.se" }]
+authors = [{ name = "Patrik Larsson", email = "patrik@tensorhead.com" }]
 requires-python = ">=3.9"
 dependencies = ["numpy>=1.21"]
 keywords = [
@@ -37,9 +37,9 @@ classifiers = [
 dynamic = ["version"]
 
 [project.urls]
-Homepage = "https://github.com/BackyardML/dithering"
-Repository = "https://github.com/BackyardML/dithering"
-Issues = "https://github.com/BackyardML/dithering/issues"
+Homepage = "https://github.com/tensorhead/dithering"
+Repository = "https://github.com/tensorhead/dithering"
+Issues = "https://github.com/tensorhead/dithering/issues"
 
 [project.optional-dependencies]
 test = ["pytest", "pillow"]
