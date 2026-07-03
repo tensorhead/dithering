@@ -46,10 +46,9 @@ jobs:
       - uses: dtolnay/rust-toolchain@stable
       - name: Build and install wheel
         run: |
-          python -m pip install --upgrade pip maturin
+          python -m pip install --upgrade pip maturin numpy pytest pillow
           maturin build --release --out dist
           python -m pip install --no-index --find-links dist dithering
-          python -m pip install numpy pytest pillow
       - name: Run Python tests
         run: pytest tests/ -v
 
