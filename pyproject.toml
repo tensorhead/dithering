@@ -1,16 +1,48 @@
 [build-system]
-requires = ["maturin>=1.1,<2.0"]
+requires = ["maturin>=1.5,<2.0"]
 build-backend = "maturin"
 
 [project]
 name = "dithering"
-requires-python = ">=3.7"
+description = "Fast image dithering: ordered (Bayer), error diffusion (Floyd-Steinberg & friends), random; palettes, linear-light and more. Rust speed, one-call API."
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [{ name = "Patrik Larsson", email = "patrik@backyardml.se" }]
+requires-python = ">=3.9"
+dependencies = ["numpy>=1.21"]
+keywords = [
+    "dithering",
+    "dither",
+    "image-processing",
+    "floyd-steinberg",
+    "bayer",
+    "ordered-dithering",
+    "error-diffusion",
+    "halftone",
+    "pixel-art",
+]
 classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
     "Programming Language :: Rust",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
     "Programming Language :: Python :: Implementation :: CPython",
     "Programming Language :: Python :: Implementation :: PyPy",
+    "Topic :: Multimedia :: Graphics",
+    "Topic :: Scientific/Engineering :: Image Processing",
+    "Typing :: Typed",
 ]
+dynamic = ["version"]
 
+[project.urls]
+Homepage = "https://github.com/BackyardML/dithering"
+Repository = "https://github.com/BackyardML/dithering"
+Issues = "https://github.com/BackyardML/dithering/issues"
+
+[project.optional-dependencies]
+test = ["pytest", "pillow"]
 
 [tool.maturin]
 features = ["pyo3/extension-module"]
